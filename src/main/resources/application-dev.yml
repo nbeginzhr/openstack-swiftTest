@@ -1,0 +1,28 @@
+server:
+  port: 9999
+  context-path: /swift
+  session:
+    cookie:
+      secure: false
+      domain: haoyu.com
+
+spring:
+  application:
+    name: swift
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+openstack:
+  emlContainer: testNo
+  swiftServer: http://localhost:5000/v3
+  domainId: 3ea400e9e9349test
+  projectName: admin
+  gzacUser: admin
+  gzacPwd: testPwd
+
